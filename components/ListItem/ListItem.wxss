@@ -1,0 +1,22 @@
+/* components/ListItem/ListItem.wxss */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10rpx 30rpx
+}
+.left{
+    display: flex;
+    align-items: center;
+    width:300rpx
+}
+.play{
+    width:60rpx;
+    height:60rpx
+}
+.index{
+    margin-right: 20rpx;
+}
+.current{
+    background: rgb(241, 241, 241);
+}

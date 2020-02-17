@@ -1,0 +1,13 @@
+<!--components/ListItem/ListItem.wxml-->
+<wxs src='../../wxs/filter.wxs' module="tools"></wxs>
+<view class="container {{tools.odd(index+1)==1?'current':''}}">
+    <view class="left">
+        <view class="index">{{tools.zero(index+1)}}</view>
+        <view>
+            <view>{{tools.format(data.name)}}</view>
+            <view>{{tools.format(data.ar[0].name)}}</view>
+        </view>
+    </view>
+    <view class="time">{{tools.time(data.dt)}}</view>
+    <image class="play" src="{{isPlay && playId==data.id?'/images/pause.png':'/images/play.png'}}" bind:tap="handleClick"></image>
+</view>

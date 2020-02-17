@@ -1,0 +1,10 @@
+/* pages/more/more.wxss */
+.more{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:14rpx
+}
+v-item{
+    margin-bottom: 30rpx;
+}

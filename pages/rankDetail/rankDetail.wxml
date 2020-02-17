@@ -1,0 +1,3 @@
+<!--pages/rankDetail/rankDetail.wxml-->
+<v-item bind:toggle="handleToggle" isPlay="{{isPlay}}" playId="{{playId}}" index="{{index}}" data="{{item}}" wx:for="{{data}}" wx:key></v-item>
+ 

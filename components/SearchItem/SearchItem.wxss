@@ -1,0 +1,22 @@
+/* components/SearchItem/SearchItem.wxss */
+image{
+    width:60rpx;
+    height:60rpx
+}
+.left{
+    display:flex;
+    align-items: center;
+    width:300rpx
+}
+text{
+    margin-right: 15rpx;
+}
+.search{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20rpx
+}
+.current{
+    background: rgb(241, 241, 241);
+}

@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/more/more",
+    "pages/search/search",
+    "pages/play/play",
+    "pages/searchPlay/searchPlay",
+    "pages/rankDetail/rankDetail"
+  ],
+  "requiredBackgroundModes": ["audio", "location"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#22D59C",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

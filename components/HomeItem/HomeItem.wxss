@@ -1,0 +1,15 @@
+/* components/HomeItem/HomeItem.wxss */
+.item {
+    width: 220rpx;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 50rpx; */
+    font-size: 30rpx;
+}
+
+image {
+    width: 220rpx;
+    height: 220rpx;
+    border-radius: 15rpx;
+    margin-bottom: 10rpx;
+}

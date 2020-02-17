@@ -1,0 +1,2 @@
+<!--pages/search/search.wxml-->
+<v-item bind:toggle="handleToggle" isPlay="{{isPlay}}" playId="{{playId}}" index="{{index}}" data="{{item}}" wx:for="{{search}}" wx:key></v-item>

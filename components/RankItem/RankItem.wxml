@@ -1,0 +1,9 @@
+<!--components/RankItem/RankItem.wxml-->
+<wxs src="../../wxs/filter.wxs" module="tools"></wxs>
+<view class="item" bind:tap="handleDetail">
+    <view class="title">{{data.title}}</view>
+    <view class="sort" wx:for="{{tools.three(data.data)}}" wx:key>
+        <view>{{index+1}}.{{item.name}}</view>
+        <view>{{item.ar[0].name}}</view>
+    </view>
+</view>

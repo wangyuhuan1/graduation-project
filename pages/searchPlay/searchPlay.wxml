@@ -1,0 +1,16 @@
+<!--pages/searchPlay/searchPlay.wxml-->
+<view class="play">
+    <view class="moveCircle">
+        <image class="bg  {{isPlay?'running':'paused'}}" src="{{plays.al.picUrl}}" mode="aspectFit|aspectFill|widthFix"
+            lazy-load="{{ture}}">
+        </image>
+    </view>
+    <image src="/images/play-item.png" class="play-item {{isPlay?'play':'unplay'}}"></image>
+    <text class="name">{{plays.name}}</text>
+    <image class="music " bind:tap="handleClick" src="{{isPlay?'/images/pause.png':'/images/play.png'}}"
+        mode="aspectFit|aspectFill|widthFix">
+
+    </image>
+    <image src="{{plays.al.picUrl}}" class="background_img"></image>
+    <view class="bg-blur"></view>
+</view>

@@ -1,0 +1,79 @@
+/* pages/home/home.wxss */
+page {
+    height: 100%;
+    background: #F9F9F9;
+    position: relative;
+    font-size: 30rpx;
+}
+.search-wrap {
+    position: relative;
+    width:90%;
+    height:72rpx;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon{
+    width:50rpx;
+    height:50rpx;
+    margin-top: 10rpx;
+}
+.define{
+    width:50rpx;
+    height:70rpx;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100;
+    background: #fff;
+    border-radius: 40rpx;
+}
+input{
+    height: 70rpx;
+    margin: 30rpx auto;
+    background: #fff;
+    border-radius: 35rpx;
+    padding-left: 110rpx;
+}
+.music{
+    margin-top: 50rpx;
+}
+.title{
+    display:flex;
+    justify-content: space-between;
+    margin:20rpx 0;
+    padding-left: 10rpx;
+    padding-right:20rpx;
+    font-size: 35rpx;
+}
+.title text{
+    font-size: 37rpx;
+    font-weight: bolder;
+    color:rgb(49, 49, 49)
+}
+.title view{
+    color: rgba(26,26,26,.5);
+    display:flex;
+    align-items: center;
+}
+.title image{
+    width:40rpx;
+    height:40rpx;
+}
+.scroll{
+    white-space: nowrap;
+}
+.scroll v-item{
+    display: inline-block;
+    position: relative;
+    padding-left: 10rpx;
+    margin-right: 22rpx;
+}
+.sheet{
+    font-weight: bolder;
+}
+.more{
+    color:rgb(156, 156, 156)
+}
+.item{
+    margin-top:40rpx;
+}

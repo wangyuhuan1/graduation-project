@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-tab": "/vant-ui/tab/index",
+    "van-tabs": "/vant-ui/tabs/index",
+    "van-overlay": "/vant-ui/overlay/index",
+    "v-item":"/components/HomeItem/HomeItem",
+    "r-item":"/components/RankItem/RankItem"
+  },
+  "navigationBarTitleText": "首页"
+}

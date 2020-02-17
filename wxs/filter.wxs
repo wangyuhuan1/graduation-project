@@ -1,0 +1,58 @@
+function format(val) {
+    if (val) {
+        if (val.length > 5) {
+            val = val.slice(0, 5) + "..."
+        }
+    }
+    return val
+}
+function wan(val) {
+    if (val) {
+        val = (val / 10000).toFixed(1) + "万"
+    }
+    return (val)
+}
+function data(val) {
+    if (val) {
+        val = val.slice(0, 6)
+    }
+    return val
+}
+function three(val) {
+    if (val) {
+        val = val.slice(0, 3)
+    }
+    return val
+}
+function odd(val) {
+    if (val) {
+        val = val % 2
+    }
+    return val
+}
+function zero(val) {
+    if (val) {
+        if (val < 10) {
+            val = "0" + val
+        }
+    }
+    return val
+}
+function time(value) {
+    var seconds = Math.floor(value / 1000)
+    var minutes = Math.floor(seconds / 60)
+    seconds = seconds % 60
+    function transform(params) {
+        return params < 10 ? "0" + params : params;
+    }
+    return value = transform(minutes) + ":" + transform(seconds)
+}
+module.exports = {
+    format: format,
+    wan: wan,
+    data: data,
+    odd: odd,
+    zero: zero,
+    time: time,
+    three: three
+}

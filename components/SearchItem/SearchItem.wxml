@@ -1,0 +1,13 @@
+<!--components/SearchItem/SearchItem.wxml-->
+<wxs src="../../wxs/filter.wxs" module="tools"></wxs>
+<view class="search {{tools.odd(index+1)==0?'current':''}}">
+    <view class="left">
+        <text>{{tools.zero(index+1)}}</text>
+        <view>
+            <view>{{tools.format(data.name)}}</view>
+            <view>{{tools.format(data.artists[0].name)}}</view>
+        </view>
+    </view>
+    <view class="time">{{tools.time(data.duration)}}</view>
+    <image class="play" src="{{isPlay && playId==data.id?'/images/pause.png':'/images/play.png'}}" bind:tap="handleClick"></image>
+</view>

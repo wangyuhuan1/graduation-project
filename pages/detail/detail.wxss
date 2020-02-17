@@ -1,0 +1,27 @@
+/* pages/detail/detail.wxss */
+.big{
+    width:300rpx;
+    height:300rpx;
+    border-radius: 30rpx;
+    margin:20rpx;
+}
+.top{
+    text-align: center;
+}
+.creator{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    margin:10rpx
+}
+.at{
+    width:60rpx;
+    height:60rpx;
+    border-radius: 50%;
+    margin-right: 15rpx;
+}
+.count{
+    font-size: 30rpx;
+    color: #666;
+}

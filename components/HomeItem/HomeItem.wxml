@@ -1,0 +1,7 @@
+<!--components/HomeItem/HomeItem.wxml-->
+<wxs src="../../wxs/filter.wxs" module="tools"></wxs>
+<view class="item" bind:tap="handleDetail"> 
+    <slot name="icon"></slot>
+    <image src="{{data.coverImgUrl}}"></image>
+    <text>{{tools.format(data.name)}}</text>
+</view>

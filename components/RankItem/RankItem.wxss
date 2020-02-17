@@ -1,0 +1,19 @@
+/* components/RankItem/RankItem.wxss */
+.item{
+    width:700rpx;
+    height:200rpx;
+    background-color: #fff;
+    margin:20rpx;
+    border-radius: 15rpx;
+    padding:20rpx 30rpx;
+    margin:50rpx 0
+}
+.sort{
+    display:flex;
+    justify-content: space-between;
+    font-size: 35rpx;
+}
+.title{
+    margin-bottom: 20rpx;
+    font-size: 40rpx;
+}

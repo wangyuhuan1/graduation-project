@@ -1,0 +1,4 @@
+<!--pages/more/more.wxml-->
+<view class="more">
+    <v-item data="{{item}}" wx:for="{{list.data}}" wx:key></v-item>
+</view>

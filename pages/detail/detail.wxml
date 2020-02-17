@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<wxs src="../../wxs/filter.wxs" module="tools"></wxs>
+<view class="top">
+    <image class="big" src="{{playlist.coverImgUrl}}"></image>
+    <view>{{playlist.name}}</view>  
+    <view class="creator">
+        <image class="at" src="{{playlist.creator.avatarUrl}}"></image>
+        <text>{{playlist.creator.nickname}}</text>
+    </view>  
+    <view class="count">
+        <text>播放量：</text>
+        <text>{{tools.wan(playlist.playCount)}}</text>
+    </view>
+</view>
+<view class="list">
+    <v-item bind:toggle="handleToggle" wx:for="{{playlist.tracks}}" wx:key isPlay="{{isPlay}}" playId="{{playId}}" data="{{item}}" index="{{index}}"></v-item>
+</view>

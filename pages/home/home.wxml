@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<wxs src="../../wxs/filter.wxs" module="tools"></wxs>
+<van-tabs color="#22D59C">
+    <van-tab title="推荐">
+        <form bind:submit="handleSubmit">
+            <view class="form" >
+                <view class="search-wrap" >
+                    <input type="text" name="keyword" placeholder="搜索" />
+                    <button size="mini" class="define" form-type="submit" >
+                        <image class="icon" src="/images/search.png"></image>
+                    </button>
+                </view>
+            </view>
+        </form>
+        <view class="item" wx:for="{{musics}}" wx:for-item="list" wx:key>
+            <view class="title">
+                <text>{{list.title}}</text>
+                <view bind:tap="handleMore" data-list="{{list}}">更多<image src="/images/more.png"></image></view>
+            </view>
+            <scroll-view scroll-x="true" class="scroll">
+                <v-item data="{{item}}" wx:for="{{tools.data(list.data)}}" wx:key></v-item>
+            </scroll-view>
+        </view>
+    </van-tab>
+
+    <van-tab title="排行">
+        <r-item data="{{item}}" wx:for="{{lists}}" wx:key></r-item>
+    </van-tab>
+</van-tabs>
